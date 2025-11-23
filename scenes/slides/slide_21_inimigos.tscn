@@ -25,12 +25,12 @@ theme_override_constants/margin_bottom = 40
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 30
+theme_override_constants/separation = 20
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 42
 text = "Criando Inimigos"
 horizontal_alignment = 1
 
@@ -38,7 +38,7 @@ horizontal_alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/h_separation = 30
-theme_override_constants/v_separation = 25
+theme_override_constants/v_separation = 15
 columns = 2
 
 [node name="Feature1" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Features"]
@@ -48,20 +48,20 @@ theme_override_constants/separation = 10
 
 [node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature1"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 40
 text = "🎯"
 horizontal_alignment = 1
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature1"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 24
 text = "Movimento"
 horizontal_alignment = 1
 
 [node name="Desc" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature1"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 20
 text = "Mover em direção
 ao jogador"
 horizontal_alignment = 1
@@ -73,20 +73,20 @@ theme_override_constants/separation = 10
 
 [node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature2"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 40
 text = "💥"
 horizontal_alignment = 1
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature2"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.5, 0.5, 1)
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 24
 text = "Colisão"
 horizontal_alignment = 1
 
 [node name="Desc" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature2"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 20
 text = "Detectar tiro
 e morrer"
 horizontal_alignment = 1
@@ -98,20 +98,20 @@ theme_override_constants/separation = 10
 
 [node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature3"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 40
 text = "❤️"
 horizontal_alignment = 1
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature3"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.6, 0.6, 1)
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 24
 text = "Vida"
 horizontal_alignment = 1
 
 [node name="Desc" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature3"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 20
 text = "HP, dano,
 destruição"
 horizontal_alignment = 1
@@ -123,26 +123,26 @@ theme_override_constants/separation = 10
 
 [node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature4"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 40
 text = "⚡"
 horizontal_alignment = 1
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature4"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0.6, 1)
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 24
 text = "Grupo"
 horizontal_alignment = 1
 
 [node name="Desc" type="Label" parent="MarginContainer/VBoxContainer/Features/Feature4"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 20
 text = "Adicionar ao
 group \"enemies\""
 horizontal_alignment = 1
 
 [node name="CodeExample" type="ColorRect" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 130)
 layout_mode = 2
 color = Color(0.1, 0.1, 0.15, 0.9)
 
@@ -165,24 +165,24 @@ theme_override_constants/separation = 8
 [node name="Line1" type="Label" parent="MarginContainer/VBoxContainer/CodeExample/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.8, 0.6, 1, 1)
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 22
 text = "func _physics_process(delta):"
 
 [node name="Line2" type="Label" parent="MarginContainer/VBoxContainer/CodeExample/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0.6, 1)
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 22
 text = "    var direction = (player.position - position).normalized()"
 
 [node name="Line3" type="Label" parent="MarginContainer/VBoxContainer/CodeExample/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0.6, 1)
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 22
 text = "    velocity = direction * speed"
 
 [node name="Footer" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.8, 1, 0.8, 1)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 22
 text = "Mesmo processo: Node → Script → Lógica"
 horizontal_alignment = 1

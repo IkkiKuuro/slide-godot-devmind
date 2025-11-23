@@ -95,11 +95,11 @@ horizontal_alignment = 1
 autoplay = "pulse"
 
 [node name="Particles" type="CPUParticles2D" parent="."]
-position = Vector2(640, 360)
+position = Vector2(960, 540)
 amount = 50
 lifetime = 3.0
 emission_shape = 3
-emission_rect_extents = Vector2(640, 360)
+emission_rect_extents = Vector2(960, 540)
 gravity = Vector2(0, 20)
 initial_velocity_min = 10.0
 initial_velocity_max = 30.0
