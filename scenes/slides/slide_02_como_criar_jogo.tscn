@@ -63,12 +63,14 @@ size_flags_vertical = 3
 [node name="Description" type="Label" parent="MarginContainer/VBoxContainer/DiagramContainer/InputBox/Panel"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.3382046
-anchor_top = 0.2917505
-anchor_right = 0.6889353
-anchor_bottom = 0.6539235
-offset_right = -84.0
-offset_bottom = -90.0
+anchor_left = 0.31064928
+anchor_top = 0.27720326
+anchor_right = 0.66164935
+anchor_bottom = 0.6402033
+offset_left = 0.19898987
+offset_top = 0.22998047
+offset_right = -83.93002
+offset_bottom = -90.18103
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2, 2)
@@ -77,6 +79,7 @@ text = "Teclado
 Mouse
 Controle"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Arrow1" type="Label" parent="MarginContainer/VBoxContainer/DiagramContainer"]
 layout_mode = 2
@@ -108,12 +111,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = -40.0
-offset_right = 80.0
-offset_bottom = 40.0
+offset_left = -164.5
+offset_top = -110.5
+offset_right = -4.5
+offset_bottom = -20.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(2, 2)
 theme_override_font_sizes/font_size = 20
 text = "Processar
 Calcular
@@ -150,12 +154,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = -40.0
-offset_right = 80.0
-offset_bottom = 40.0
+offset_left = -159.0
+offset_top = -110.5
+offset_right = 1.0
+offset_bottom = -20.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(2, 2)
 theme_override_font_sizes/font_size = 20
 text = "Gráficos
 Sons

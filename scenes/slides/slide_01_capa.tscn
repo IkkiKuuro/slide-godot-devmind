@@ -78,14 +78,13 @@ scale_amount_min = 2.0
 scale_amount_max = 5.0
 color = Color(0.7, 0.8, 1, 0.5)
 
-[node name="CanvasLayer" type="CanvasGroup" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="sprite_template" type="AnimatedSprite2D" parent="CanvasLayer"]
 texture_filter = 1
-texture_repeat = 2
-position = Vector2(960, 790)
+position = Vector2(960.00006, 790)
 scale = Vector2(10, 10)
 sprite_frames = ExtResource("2_stkk2")
 animation = &"idle_01"
 autoplay = "idle_01"
-frame_progress = 0.5365529
+frame_progress = 0.11254616
