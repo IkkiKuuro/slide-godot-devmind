@@ -175,7 +175,8 @@ alignment = 1
 [node name="ClickMeButton" type="Button" parent="MarginContainer/VBoxContainer/InteractiveExample"]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 0
+size_flags_vertical = 0
 theme_override_font_sizes/font_size = 24
 text = "CLIQUE PARA PULAR!"
 
@@ -189,9 +190,8 @@ texture_filter = 1
 position = Vector2(33, 30)
 scale = Vector2(4, 4)
 sprite_frames = ExtResource("2_i54s3")
-animation = &"idle_02"
+animation = &"jump-fall_01"
 autoplay = "idle_02"
-frame_progress = 0.729709
 
 [node name="InfoLabel" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

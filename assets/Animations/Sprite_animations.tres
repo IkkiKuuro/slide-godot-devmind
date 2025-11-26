@@ -272,5 +272,5 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump-fall_01",
-"speed": 7.0
+"speed": 14.0
 }]
