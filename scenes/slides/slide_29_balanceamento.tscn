@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://crir3v4wiwle"]
+[gd_scene load_steps=3 format=3 uid="uid://crir3v4wiwle"]
 
-[ext_resource type="Script" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Script" uid="uid://chrs04u1qokbv" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="SpriteFrames" uid="uid://cyhdvvolomeci" path="res://assets/Animations/Sprite_animations.tres" id="2_rw0rn"]
 
 [node name="Slide29_Balanceamento" type="Control"]
 layout_mode = 3
@@ -62,11 +63,19 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 12
 
-[node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooEasy"]
+[node name="Character" type="CenterContainer" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooEasy"]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "😴"
-horizontal_alignment = 1
+size_flags_horizontal = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooEasy/Character"]
+texture_filter = 1
+position = Vector2(37.000015, 36.000008)
+scale = Vector2(2.650747, 2.4683545)
+sprite_frames = ExtResource("2_rw0rn")
+animation = &"facil_kirby"
+autoplay = "idle_02"
+frame_progress = 0.20849173
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooEasy"]
 layout_mode = 2
@@ -88,11 +97,19 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 12
 
-[node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/Balanced"]
+[node name="Character" type="CenterContainer" parent="MarginContainer/VBoxContainer/Philosophy/Examples/Balanced"]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "✅"
-horizontal_alignment = 1
+size_flags_horizontal = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/Philosophy/Examples/Balanced/Character"]
+texture_filter = 1
+position = Vector2(37.000015, 36.000008)
+scale = Vector2(2.650747, 2.4683545)
+sprite_frames = ExtResource("2_rw0rn")
+animation = &"balanceado_kirby"
+autoplay = "idle_02"
+frame_progress = 0.4169155
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/Balanced"]
 layout_mode = 2
@@ -114,11 +131,19 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 12
 
-[node name="Icon" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooHard"]
+[node name="Character" type="CenterContainer" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooHard"]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "😰"
-horizontal_alignment = 1
+size_flags_horizontal = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooHard/Character"]
+texture_filter = 1
+position = Vector2(29, 18.000061)
+scale = Vector2(2.650747, 2.4683545)
+sprite_frames = ExtResource("2_rw0rn")
+animation = &"dificil_kirby"
+autoplay = "idle_02"
+frame_progress = 0.6780725
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooHard"]
 layout_mode = 2
