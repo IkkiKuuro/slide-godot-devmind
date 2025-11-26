@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://e1k8x7qm1wn2t"]
+[gd_scene load_steps=6 format=3 uid="uid://56ed5tehpsb2"]
 
-[ext_resource type="Script" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Script" uid="uid://chrs04u1qokbv" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Texture2D" uid="uid://1borhosviysl" path="res://assets/images/Unity.svg" id="2_1wrx1"]
+[ext_resource type="Texture2D" uid="uid://cjftarxjjdetr" path="res://assets/images/Unreal Engine.png" id="3_oydhj"]
+[ext_resource type="Texture2D" uid="uid://d1abyihyj2oe0" path="res://icon.svg" id="4_27137"]
+[ext_resource type="Texture2D" uid="uid://cjioa7t1kosyl" path="res://assets/images/Gamemaker.png" id="5_t1up3"]
 
 [node name="Slide03_Engines" type="Control"]
 layout_mode = 3
@@ -56,12 +60,12 @@ horizontal_alignment = 1
 [node name="Item1" type="Label" parent="MarginContainer/VBoxContainer/ComparisonContainer/WithoutEngine"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "❌ Programar física do zero"
+text = "❌ Programar tudo do zero"
 
 [node name="Item2" type="Label" parent="MarginContainer/VBoxContainer/ComparisonContainer/WithoutEngine"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "❌ Renderizar gráficos"
+text = "❌ Renderizar gráficos "
 
 [node name="Item3" type="Label" parent="MarginContainer/VBoxContainer/ComparisonContainer/WithoutEngine"]
 layout_mode = 2
@@ -77,6 +81,11 @@ text = "❌ Detectar colisões"
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "❌ Gerenciar memória"
+
+[node name="Item6" type="Label" parent="MarginContainer/VBoxContainer/ComparisonContainer/WithoutEngine"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Resumindo: Vai ter que reinventar a roda"
 
 [node name="WithEngine" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ComparisonContainer"]
 custom_minimum_size = Vector2(400, 0)
@@ -116,11 +125,16 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "✅ Gerenciamento otimizado"
 
-[node name="Analogy" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Item6" type="Label" parent="MarginContainer/VBoxContainer/ComparisonContainer/WithEngine"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Resumindo: Você só precisa aprender a usar a engine."
+
+[node name="EnginesExample" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.8, 0.8, 1, 1)
 theme_override_font_sizes/font_size = 28
-text = "Analogia: Como usar Photoshop vs. Paint"
+text = "Exemplos das Engines mais utilizadas"
 horizontal_alignment = 1
 
 [node name="LogosContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
@@ -133,51 +147,37 @@ custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 color = Color(0.3, 0.3, 0.3, 0.5)
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/LogosContainer/Unity"]
+[node name="image" type="TextureRect" parent="MarginContainer/VBoxContainer/LogosContainer/Unity"]
+texture_filter = 1
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -30.0
-offset_top = -13.0
-offset_right = 30.0
-offset_bottom = 13.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 18
-text = "Unity"
-horizontal_alignment = 1
+texture = ExtResource("2_1wrx1")
 
 [node name="Unreal" type="ColorRect" parent="MarginContainer/VBoxContainer/LogosContainer"]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 color = Color(0.3, 0.3, 0.3, 0.5)
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/LogosContainer/Unreal"]
+[node name="Image" type="TextureRect" parent="MarginContainer/VBoxContainer/LogosContainer/Unreal"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -30.0
-offset_top = -13.0
-offset_right = 30.0
-offset_bottom = 13.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 18
-text = "Unreal"
-horizontal_alignment = 1
+texture = ExtResource("3_oydhj")
+expand_mode = 1
 
 [node name="Godot" type="ColorRect" parent="MarginContainer/VBoxContainer/LogosContainer"]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 color = Color(0.3, 0.5, 0.7, 0.7)
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/LogosContainer/Godot"]
+[node name="Image" type="TextureRect" parent="MarginContainer/VBoxContainer/LogosContainer/Godot"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -190,28 +190,19 @@ offset_right = 30.0
 offset_bottom = 13.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 18
-text = "Godot"
-horizontal_alignment = 1
+texture = ExtResource("4_27137")
 
 [node name="GameMaker" type="ColorRect" parent="MarginContainer/VBoxContainer/LogosContainer"]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 color = Color(0.3, 0.3, 0.3, 0.5)
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/LogosContainer/GameMaker"]
+[node name="Image" type="TextureRect" parent="MarginContainer/VBoxContainer/LogosContainer/GameMaker"]
+texture_filter = 1
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -50.0
-offset_top = -13.0
-offset_right = 50.0
-offset_bottom = 13.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 18
-text = "GameMaker"
-horizontal_alignment = 1
+texture = ExtResource("5_t1up3")
