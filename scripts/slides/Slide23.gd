@@ -19,7 +19,7 @@ func _on_spawn_timer_timeout():
 		spawn_timer.stop()
 		return
 	
-    #Alguma coisa
+	#Alguma coisa
 	# Criar o emoji do inimigo - Teste
 	var enemy = Label.new()
 	enemy.text = "👾"

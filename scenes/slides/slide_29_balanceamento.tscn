@@ -74,8 +74,8 @@ position = Vector2(37.000015, 36.000008)
 scale = Vector2(2.650747, 2.4683545)
 sprite_frames = ExtResource("2_rw0rn")
 animation = &"facil_kirby"
-autoplay = "idle_02"
-frame_progress = 0.20849173
+autoplay = "facil_kirby"
+frame_progress = 0.2922459
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooEasy"]
 layout_mode = 2
@@ -108,8 +108,8 @@ position = Vector2(37.000015, 36.000008)
 scale = Vector2(2.650747, 2.4683545)
 sprite_frames = ExtResource("2_rw0rn")
 animation = &"balanceado_kirby"
-autoplay = "idle_02"
-frame_progress = 0.4169155
+autoplay = "balanceado_kirby"
+frame_progress = 0.49085423
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/Balanced"]
 layout_mode = 2
@@ -142,8 +142,8 @@ position = Vector2(29, 18.000061)
 scale = Vector2(2.650747, 2.4683545)
 sprite_frames = ExtResource("2_rw0rn")
 animation = &"dificil_kirby"
-autoplay = "idle_02"
-frame_progress = 0.6780725
+autoplay = "dificil_kirby"
+frame_progress = 0.8511353
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Philosophy/Examples/TooHard"]
 layout_mode = 2

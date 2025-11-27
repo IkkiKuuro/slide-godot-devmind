@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2k8x7qm1wn3q"]
+[gd_scene load_steps=3 format=3 uid="uid://b2k8x7qm1wn3q"]
 
-[ext_resource type="Script" path="res://scripts/slides/Slide23.gd" id="1_1"]
+[ext_resource type="Script" uid="uid://blixenoflylph" path="res://scripts/slides/Slide23.gd" id="1_1"]
+[ext_resource type="SpriteFrames" uid="uid://cyhdvvolomeci" path="res://assets/Animations/Sprite_animations.tres" id="2_xsqm0"]
 
 [node name="Slide23_Spawn" type="Control"]
 layout_mode = 3
@@ -136,17 +137,20 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Concept/Diagram/Spawn/Box/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "👾"
-horizontal_alignment = 1
-
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/Concept/Diagram/Spawn/Box/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Enemy"
 horizontal_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/Concept/Diagram/Spawn/Box/VBoxContainer"]
+texture_filter = 1
+position = Vector2(56.00002, -48.00001)
+scale = Vector2(1.0473013, 1.0290889)
+sprite_frames = ExtResource("2_xsqm0")
+animation = &"Inimigo"
+autoplay = "facil_kirby"
+frame_progress = 0.58594
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Concept/Diagram/Spawn"]
 layout_mode = 2
