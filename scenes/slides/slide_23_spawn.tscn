@@ -149,8 +149,8 @@ position = Vector2(56.00002, -48.00001)
 scale = Vector2(1.0473013, 1.0290889)
 sprite_frames = ExtResource("2_xsqm0")
 animation = &"Inimigo"
-autoplay = "facil_kirby"
-frame_progress = 0.58594
+autoplay = "Inimigo"
+frame_progress = 0.39194995
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/Concept/Diagram/Spawn"]
 layout_mode = 2
