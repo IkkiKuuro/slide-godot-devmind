@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgdm61yvdb1s0"]
+[gd_scene load_steps=5 format=3 uid="uid://bgdm61yvdb1s0"]
 
-[ext_resource type="Script" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Script" uid="uid://chrs04u1qokbv" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Texture2D" uid="uid://drv6oxkxtvg7o" path="res://assets/images/slide 06/passo 01.PNG" id="2_ugh35"]
+[ext_resource type="Texture2D" uid="uid://dn4wqqa017ob4" path="res://assets/images/slide 06/passo 02.PNG" id="3_ouxkh"]
+[ext_resource type="SpriteFrames" uid="uid://cyhdvvolomeci" path="res://assets/Animations/Sprite_animations.tres" id="4_ouxkh"]
 
 [node name="Slide06_CriandoProjeto" type="Control"]
 layout_mode = 3
@@ -10,6 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1")
+metadata/_edit_vertical_guides_ = [230.0]
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -124,31 +128,21 @@ size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 26
 text = "\"Create & Edit\""
 
-[node name="ImagePlaceholder" type="ColorRect" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 150)
-layout_mode = 2
-color = Color(0.2, 0.2, 0.3, 0.5)
+[node name="Passo01" type="Sprite2D" parent="."]
+position = Vector2(503.00003, 697.75)
+scale = Vector2(2.822917, 3.2756417)
+texture = ExtResource("2_ugh35")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ImagePlaceholder"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -13.0
-offset_right = 150.0
-offset_bottom = 13.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 16
-text = "[Screenshots dos passos]"
-horizontal_alignment = 1
+[node name="Passo02" type="Sprite2D" parent="."]
+position = Vector2(1372.0625, 628.5)
+scale = Vector2(2.1510532, 1.8515983)
+texture = ExtResource("3_ouxkh")
 
-[node name="Note" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.8, 0.5, 1)
-theme_override_font_sizes/font_size = 24
-text = "Hoje usaremos projeto PRÉ-CONFIGURADO"
-horizontal_alignment = 1
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 3
+position = Vector2(487, 437)
+scale = Vector2(8, 8)
+sprite_frames = ExtResource("4_ouxkh")
+animation = &"idle_03"
+autoplay = "idle_03"
+frame_progress = 0.30808163

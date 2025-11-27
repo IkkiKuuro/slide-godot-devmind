@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://f1k8x7qm1wn2u"]
+[gd_scene load_steps=4 format=3 uid="uid://b56ed5tehpsb3"]
 
-[ext_resource type="Script" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Script" uid="uid://chrs04u1qokbv" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="SpriteFrames" uid="uid://cyhdvvolomeci" path="res://assets/Animations/Sprite_animations.tres" id="2_cvfi6"]
+[ext_resource type="Texture2D" uid="uid://d1abyihyj2oe0" path="res://icon.svg" id="3_bp0og"]
 
 [node name="Slide04_PorQueGodot" type="Control"]
 layout_mode = 3
@@ -207,5 +209,27 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.8, 0.5, 1)
 theme_override_font_sizes/font_size = 26
-text = "Mas os CONCEITOS funcionam em TODAS as engines!"
+text = "Mas os CONCEITOS se aplicam a TODAS as engines!"
 horizontal_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer"]
+texture_filter = 3
+texture_repeat = 3
+position = Vector2(980, 717)
+scale = Vector2(8, 8)
+sprite_frames = ExtResource("2_cvfi6")
+animation = &"run_01"
+autoplay = "run_01"
+frame_progress = 0.42348114
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.039215688)
+theme_override_font_sizes/font_size = 50
+text = "Viva a Godot!!!"
+horizontal_alignment = 1
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.039215688)
+position = Vector2(940, 355)
+texture = ExtResource("3_bp0og")

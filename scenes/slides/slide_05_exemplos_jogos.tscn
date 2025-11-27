@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://gdm61yvdb1sy"]
 
-[ext_resource type="Script" path="res://scripts/BaseSlide.gd" id="1_1"]
+[ext_resource type="Script" uid="uid://chrs04u1qokbv" path="res://scripts/BaseSlide.gd" id="1_1"]
 
 [node name="Slide05_ExemplosJogos" type="Control"]
 layout_mode = 3
@@ -208,7 +208,7 @@ horizontal_alignment = 1
 [node name="Name" type="Label" parent="MarginContainer/VBoxContainer/GamesGrid/Game5"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "Ex-Zodiac"
+text = "Halls of Torment"
 horizontal_alignment = 1
 
 [node name="Game6" type="VBoxContainer" parent="MarginContainer/VBoxContainer/GamesGrid"]
@@ -242,12 +242,12 @@ horizontal_alignment = 1
 [node name="Name" type="Label" parent="MarginContainer/VBoxContainer/GamesGrid/Game6"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "CRUELTY SQUAD"
+text = "Buckshot Roulettte"
 horizontal_alignment = 1
 
 [node name="Footer" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.8, 0.5, 1)
 theme_override_font_sizes/font_size = 28
-text = "Indie ao AAA - tudo é possível!"
+text = "Indie ao AAA - Viva a Godot!!"
 horizontal_alignment = 1
